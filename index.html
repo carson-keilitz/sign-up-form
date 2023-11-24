@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="introContainer">
+        <h1 class="title">Carson Tutors</h1>
+        <footer>Photo by Carson Keilitz</footer>
+    </div>
+    <div class="formContainer">
+        <div class="intro">
+            Have you ever wanted to know what your favorite celebrity is doing right now? Well now you can! Sign up to get the latest updates on your favorite celebrities!
+        </div>
+        <div class="sign-up-container">
+            <h2 class="signup">Sign up Now</h2>
+            <form action="post" id="signUpForm">
+                <div class="col">
+                    <div class="form-container">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                    </div>
+                    <div class="form-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-container">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-container">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                    </div>
+                    <div class="form-container">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                    </div>
+                    <div class="form-container">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="buttonContainer">
+            <button type="submit" form="signUpForm" value="Submit">Sign Up</button>
+            <div>Already Have an account? </div>
+            <a href="login.html">Log in</a>
+        </div>
+    </div>
+</body>
+</html>
