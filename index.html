@@ -9,50 +9,53 @@
 <body>
     <div class="introContainer">
         <h1 class="title">Carson Tutors</h1>
-        <footer>Photo by Carson Keilitz</footer>
+        <footer>Photo by Henry Be on Splash Art</footer>
     </div>
     <div class="formContainer">
         <div class="intro">
-            Have you ever wanted to know what your favorite celebrity is doing right now? Well now you can! Sign up to get the latest updates on your favorite celebrities!
+            Have you ever struggled with EECS 183, 280, or 281? Have you ever wished there was someone who could help you understand the fundmentals: inheritance, polymorphism, and pointers. Well, I have the person for you!!
+            <br> 
+            <br>
+            <br>
+            <strong>Carson Keilitz</strong>
         </div>
         <div class="sign-up-container">
-            <h2 class="signup">Sign up Now</h2>
+            <strong><h2 class="signup">Sign up Now</h2></strong>
             <form action="post" id="signUpForm">
                 <div class="col">
                     <div class="form-container">
                         <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
                     </div>
                     <div class="form-container">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Email">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-container">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Password">
+                        <input type="password" id="password" name="password" placeholder="Password" class="error" required>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-container">
                         <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
                     </div>
                     <div class="form-container">
                         <label for="phoneNumber">Phone Number</label>
-                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
                     </div>
-                    <div class="form-container">
+                    <div class="form-container">        
                         <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" class="error" required>
                     </div>
                 </div>
             </form>
         </div>
-        <div class="buttonContainer">
-            <button type="submit" form="signUpForm" value="Submit">Sign Up</button>
-            <div>Already Have an account? </div>
-            <a href="login.html">Log in</a>
-        </div>
+           <div class="finalContainer">
+               <button type="submit" form="signUpForm" value="Submit" id="submitButton">Sign Up</button>
+                   <p class="login">Already Have an account?  <a href="login.html">    Log in</a></p>
+           </div> 
     </div>
 </body>
 </html>
